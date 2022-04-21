@@ -34,11 +34,12 @@ const findMax = (arr)=>{
 //  
 
 const sumNums = (arr)=>{
-    let sum = arr[0];
-    for (let i=0;i< arr.length;i++){
-        if (arr[i]== Number){
-            sum= + arr[i] 
-        }
+    let sum = 0;
+    for (let i=0 ; i< arr.length ; i++ ){
+
+        if (typeof arr[i] == "number") {
+            sum = sum + arr[i]
+        } 
     }
 
     return sum;
@@ -56,7 +57,9 @@ const sumNums = (arr)=>{
 // Output: ['Python','Ruby','JS','C#']
 
 const reverseArray = (arr)=>{
-    // write your code here
+    for (i= arr.length-1 ;i>=0 ;i--){
+
+    }
 }
 // -------------------------------------------------------------------------------------------------------
 
