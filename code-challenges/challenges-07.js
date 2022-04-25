@@ -98,7 +98,7 @@ const cvFormatter = (arr) => {
             arr2.push({fullName:fullName, tech:arr[i].tech}) ;
             }
         }
- return arr2
+ return arr2 
 }
 // -------------------------------------------------------------------------------------------------------
 
