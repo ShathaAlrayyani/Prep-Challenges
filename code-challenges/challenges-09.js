@@ -21,9 +21,10 @@
 const arrInc = (arr) => {
     let result = [];
    arr.forEach(item => {
-       result.push(item+="10");
+       result.push(item + 10);
        
-   });
+   })
+   return result;
 }
 // -------------------------------------------------------------------------------------------------------
 
