@@ -20,15 +20,10 @@
 
 const arrInc = (arr) => {
     let result = [];
-    
-    arr.forEach(add)
-    
-    function add(){
-        result = arr [i] + 10 ;
-    
-    }
-    // write your code here
-    return result;
+   arr.forEach(item => {
+       result.push(item+="10");
+       
+   });
 }
 // -------------------------------------------------------------------------------------------------------
 
