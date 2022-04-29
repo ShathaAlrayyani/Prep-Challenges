@@ -128,7 +128,15 @@ function fullName(arr) {
 // -------------
 
 function gradesAvg(arr) {
-    // write your code here
+    //let sum = 0 ;
+    /*let avg = arr ;
+    let map = avg.map(x => (x/arr.length ));
+    let map2 = avg.map(({firstName,lastName,gradsList}) => ( `firstName : ${firstName},
+     lastName : ${lastName} ,
+      gradsList : Array [${gradsList}] ,
+       avg : ${map}`));
+    return map2;
+*/
 }
 // -------------------------------------------------------------------------------------------------------
 
