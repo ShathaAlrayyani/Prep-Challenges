@@ -18,13 +18,10 @@
 // 
 
 const oddFiltration = (arr) => {
-    let oddNumbers = []
-    for (let i=0; i<arr.length ; i++){
-        if (arr[i] %2 != 0){
-            oddNumbers.push (arr[i])
-        }
-    }
-    return oddNumbers;
+   
+    const result = arr.filter(arr => arr%2 != 0);
+    
+    return result ;
 }
 // -------------------------------------------------------------------------------------------------------
 
