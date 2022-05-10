@@ -39,14 +39,11 @@
 // Output: 5
 
 const objectCounter = (obj) => {
-    let numOfObj =0;
-    let objNum = obj.reduce(function(obj, currentValue) {
-         numOfObj= obj.length ; 
-        
-    } , 0 )
-    return numOfObj;
-
-
+    const count = obj.reduce((counter, object) => {
+        return counter +=1;
+      }, 0);
+      
+ return count ;
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -66,9 +63,13 @@ const objectCounter = (obj) => {
 // ------------------------
 
 const stringReverse = (str) => {
-    return str.split(" ").map(function(word) {
-        return word.split(" ").join(" ");
-      }).reverse().join(" ");
+  
+    let newStr = [];
+    let Array = str.split(" ").reduce(x,y => {
+        return newStr.join(" "); },0).reverse().join(" ");
+
+    return ;
+
 }
    /* another way to solve this challenge:
 
@@ -78,6 +79,12 @@ const stringReverse = (str) => {
         reverseWord.push(myArray[i]);
     }
     return reverseWord.join(" ") ;
+
+    third way to solve this challenge :
+
+     return str.split(" ").map(function(word) {
+        return word.split(" ").join(" ");
+
 */
 // -------------------------------------------------------------------------------------------------------
 
