@@ -60,19 +60,23 @@ const objectCounter = (obj) => {
 // since you need to reverse words, you may get some use of the methods
 // you learnt before to split the string to words
 //
-// ------------------------
+// ------------------------ still not solved 
 
 const stringReverse = (str) => {
   
     let newStr = [];
-    let Array = str.split(" ").reduce(x,y => {
-        return newStr.join(" "); },0).reverse().join(" ");
+    let Array = str.split(" ").reduce((counter, object) => {
+         newStr.push(object) ;},0)
 
-    return ;
+    return newStr.reverse().join(" "); ;
 
 }
 
    /* another way to solve this challenge:
+
+   let Array = str.split(" ").reverse().join(" ");
+
+    return Array ;
 
    let myArray = str.split(" ");
     let reverseWord =[];
