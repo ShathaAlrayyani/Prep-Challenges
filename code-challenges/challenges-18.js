@@ -48,11 +48,12 @@ const wordLength = (str) => {
 const wordLetters = (str1, str2) => {
     let x = str1.length;
     let y = str2.length;
+    let string1 = str1.split("").sort();
+    let string2 = str2.split("").sort();
+    
     if ( x!=y)
         return false;
 
-    let string1 = str1.split("").sort();
-    let string2 = str2.split("").sort();
     for (let i=0 ;i< x ; i++){
         if(string1[i] != string2[i])
             return false;
