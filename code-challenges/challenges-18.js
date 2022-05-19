@@ -15,6 +15,12 @@
 //
 
 const wordLength = (str) => {
+    let str2 = str.split(" ")
+    let str3 = str2.splice(str2.length/2).join(" ")
+    let last = str3.indexOf(" ");
+    
+    return last;
+    
     // write your code here
 }
 // -------------------------------------------------------------------------------------------------------
@@ -40,6 +46,18 @@ const wordLength = (str) => {
 // Output: false
 
 const wordLetters = (str1, str2) => {
+    let x = str1.length;
+    let y = str2.length;
+    if ( x!=y)
+        return false;
+
+    let string1 = str1.split("").sort();
+    let string2 = str2.split("").sort();
+    for (let i=0 ;i< x ; i++){
+        if(string1[i] != string2[i])
+            return false;
+    }
+    return true;
     // write your code here
 }
 // -------------------------------------------------------------------------------------------------------
